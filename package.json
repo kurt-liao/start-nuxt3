@@ -1,0 +1,54 @@
+{
+  "name": "nuxt3-start",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "The fast and easy way to start a Nuxt3 project",
+  "author": "kurt-liao",
+  "license": "MIT",
+  "homepage": "https://github.com/kurt-liao/nuxt3-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurt-liao/nuxt3-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kurt-liao/nuxt3-starter/issues"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxt3",
+    "nuxt3-starter",
+    "starter",
+    "template"
+  ],
+  "bin": {
+    "nuxt3-start": "out.cjs"
+  },
+  "files": [
+    "out.cjs",
+    "template"
+  ],
+  "engines": {
+    "node": "^14.18.0 || >= 16.0.0"
+  },
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "lint": "eslint .",
+    "lint.fix": "eslint . --fix",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.27.0",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.11.7",
+    "esbuild": "^0.15.12",
+    "eslint": "^8.26.0",
+    "fs-extra": "^10.1.0",
+    "gradient-string": "^2.0.2",
+    "husky": "^8.0.0",
+    "kolorist": "^1.6.0",
+    "minimist": "^1.2.7",
+    "mustache": "^4.2.0",
+    "prompts": "^2.4.2",
+    "typescript": "^4.8.4"
+  }
+}
