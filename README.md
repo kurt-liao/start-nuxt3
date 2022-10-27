@@ -1,14 +1,14 @@
-# nuxt3-starter
+# start-nuxt3
 
 The fast and easy way to start a Nuxt3 project.
 
 <p align="center">
-  <img src="https://github.com/kurt-liao/nuxt3-start/blob/main/assets/example.png?raw=true" width="800">
+  <img src="https://github.com/kurt-liao/start-nuxt3/blob/main/assets/demo.png?raw=true" width="800">
 </p>
 
 ## Usage
 
 ```sh
-npx nuxt3-start
+npx start-nuxt3
 ```
 

@@ -1,17 +1,17 @@
 {
-  "name": "nuxt3-start",
+  "name": "start-nuxt3",
   "type": "module",
   "version": "0.1.0",
   "description": "The fast and easy way to start a Nuxt3 project",
   "author": "kurt-liao",
   "license": "MIT",
-  "homepage": "https://github.com/kurt-liao/nuxt3-starter#readme",
+  "homepage": "https://github.com/kurt-liao/start-nuxt3#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kurt-liao/nuxt3-starter.git"
+    "url": "git+https://github.com/kurt-liao/start-nuxt3.git"
   },
   "bugs": {
-    "url": "https://github.com/kurt-liao/nuxt3-starter/issues"
+    "url": "https://github.com/kurt-liao/start-nuxt3/issues"
   },
   "keywords": [
     "nuxt",
@@ -21,7 +21,7 @@
     "template"
   ],
   "bin": {
-    "nuxt3-start": "out.cjs"
+    "start-nuxt3": "out.cjs"
   },
   "files": [
     "out.cjs",
