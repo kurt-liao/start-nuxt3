@@ -12,3 +12,11 @@ The fast and easy way to start a Nuxt3 project.
 npx start-nuxt3
 ```
 
+## Optional
+
+Use `--vu` or `--vueuse` for adding *vueuse* package and `--pinia` for pinia.
+
+```sh
+npx start-nuxr3 --vu --pinia
+```
+

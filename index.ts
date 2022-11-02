@@ -5,6 +5,7 @@ import * as fs from 'fs-extra'
 import prompts from 'prompts'
 import { bold, cyan, green, red } from 'kolorist'
 import Mustache from 'mustache'
+import minimist from 'minimist'
 
 import greet from './helpers/greet'
 import generateTemplate from './helpers/generateTemplate'
@@ -12,7 +13,7 @@ import renderCommand from './helpers/renderCommand'
 
 import type { PromptResult } from './types'
 
-function canSkipEmptying(dir: string) {
+function canSkipEmpty(dir: string) {
   if (!fs.existsSync(dir))
     return true
 
@@ -29,6 +30,20 @@ function canSkipEmptying(dir: string) {
 
 (async () => {
   const DEFAULT_PROJECT_NAME = 'nuxt3-app'
+
+  // valid options
+  // --default
+  // --pinia
+  // --vueuse / vu
+  const argv = minimist(process.argv.slice(2), {
+    alias: {
+      vueuse: ['vu'],
+    },
+    boolean: true,
+  })
+
+  const isArgvUsed = typeof (argv.default ?? argv.vueuse ?? argv.pinia) === 'boolean'
+
   try {
     let result: PromptResult = {}
 
@@ -50,7 +65,7 @@ function canSkipEmptying(dir: string) {
           },
           {
             name: 'shouldOverwrite',
-            type: () => (canSkipEmptying(targetDir) ? null : 'confirm'),
+            type: () => (canSkipEmpty(targetDir) ? null : 'confirm'),
             message: () => {
               const overwritePrompt
               = targetDir === '.' ? 'Current directory' : `Target directory "${targetDir}"`
@@ -69,7 +84,7 @@ function canSkipEmptying(dir: string) {
           },
           {
             name: 'needPinia',
-            type: 'toggle',
+            type: () => (isArgvUsed ? null : 'toggle'),
             message: 'Add Pinia?',
             initial: false,
             active: 'Y',
@@ -77,7 +92,7 @@ function canSkipEmptying(dir: string) {
           },
           {
             name: 'needVueuse',
-            type: 'toggle',
+            type: () => (isArgvUsed ? null : 'toggle'),
             message: 'Add Vueuse?',
             initial: false,
             active: 'Y',
@@ -97,7 +112,7 @@ function canSkipEmptying(dir: string) {
     }
 
     const {
-      projectName, shouldOverwrite, needPinia, needVueuse,
+      projectName, shouldOverwrite, needPinia = argv.pinia, needVueuse = argv.vueuse,
     } = result
 
     const projectDir = path.join(cwd, targetDir)

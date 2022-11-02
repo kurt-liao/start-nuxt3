@@ -1,7 +1,7 @@
 {
   "name": "start-nuxt3",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "The fast and easy way to start a Nuxt3 project",
   "author": "kurt-liao",
   "license": "MIT",
