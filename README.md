@@ -17,6 +17,6 @@ npx start-nuxt3
 Use `--vu` or `--vueuse` for adding *VueUse* package and `--pinia` for *Pinia*.
 
 ```sh
-npx start-nuxr3 --vu --pinia
+npx start-nuxt3 --vu --pinia
 ```
 
