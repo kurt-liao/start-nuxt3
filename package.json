@@ -42,7 +42,7 @@
     "@types/node": "^18.11.7",
     "esbuild": "^0.15.12",
     "eslint": "^8.26.0",
-    "fs-extra": "^10.1.0",
+    "fs-extra": "^11.0.0",
     "gradient-string": "^2.0.2",
     "husky": "^8.0.0",
     "kolorist": "^1.6.0",

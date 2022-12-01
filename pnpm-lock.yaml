@@ -6,7 +6,7 @@ specifiers:
   '@types/node': ^18.11.7
   esbuild: ^0.15.12
   eslint: ^8.26.0
-  fs-extra: ^10.1.0
+  fs-extra: ^11.0.0
   gradient-string: ^2.0.2
   husky: ^8.0.0
   kolorist: ^1.6.0
@@ -21,7 +21,7 @@ devDependencies:
   '@types/node': 18.11.7
   esbuild: 0.15.12
   eslint: 8.26.0
-  fs-extra: 10.1.0
+  fs-extra: 11.0.0
   gradient-string: 2.0.2
   husky: 8.0.1
   kolorist: 1.6.0
@@ -1390,9 +1390,9 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: true
 
-  /fs-extra/10.1.0:
-    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
-    engines: {node: '>=12'}
+  /fs-extra/11.0.0:
+    resolution: {integrity: sha512-4YxRvMi4P5C3WQTvdRfrv5UVqbISpqjORFQAW5QPiKAauaxNCwrEdIi6pG3tDFhKKpMen+enEhHIzB/tvIO+/w==}
+    engines: {node: '>=14.14'}
     dependencies:
       graceful-fs: 4.2.10
       jsonfile: 6.1.0
