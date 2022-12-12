@@ -37,10 +37,10 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.33.0",
+    "@antfu/eslint-config": "^0.34.0",
     "@types/fs-extra": "^9.0.13",
     "@types/node": "^18.11.7",
-    "esbuild": "^0.15.12",
+    "esbuild": "^0.16.0",
     "eslint": "^8.26.0",
     "fs-extra": "^11.0.0",
     "gradient-string": "^2.0.2",
