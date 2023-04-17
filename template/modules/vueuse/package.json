@@ -1,5 +1,5 @@
 {
   "devDependencies": {
-    "@vueuse/nuxt": "^9.4.0"
+    "@vueuse/nuxt": "^10.0.0"
   }
 }
