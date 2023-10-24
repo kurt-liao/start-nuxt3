@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@antfu/eslint-config': ^0.33.0
   '@types/fs-extra': ^9.0.13
-  '@types/node': ^18.11.7
+  '@types/node': ^20.0.0
   esbuild: ^0.15.12
   eslint: ^8.26.0
   fs-extra: ^11.0.0
@@ -18,7 +18,7 @@ specifiers:
 devDependencies:
   '@antfu/eslint-config': 0.33.0_wyqvi574yv7oiwfeinomdzmc3m
   '@types/fs-extra': 9.0.13
-  '@types/node': 18.11.7
+  '@types/node': 20.8.7
   esbuild: 0.15.12
   eslint: 8.26.0
   fs-extra: 11.0.0
@@ -231,7 +231,7 @@ packages:
   /@types/fs-extra/9.0.13:
     resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
-      '@types/node': 18.11.7
+      '@types/node': 20.8.7
     dev: true
 
   /@types/json-schema/7.0.11:
@@ -248,8 +248,10 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
-  /@types/node/18.11.7:
-    resolution: {integrity: sha512-LhFTglglr63mNXUSRYD8A+ZAIu5sFqNJ4Y2fPuY7UlrySJH87rRRlhtVmMHplmfk5WkoJGmDjE9oiTfyX94CpQ==}
+  /@types/node/20.8.7:
+    resolution: {integrity: sha512-21TKHHh3eUHIi2MloeptJWALuCu5H7HQTdTrWIFReA8ad+aggoX+lRes3ex7/FtpC+sVUpFMQ+QTfYr74mruiQ==}
+    dependencies:
+      undici-types: 5.25.3
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -2408,6 +2410,10 @@ packages:
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
+    dev: true
+
+  /undici-types/5.25.3:
+    resolution: {integrity: sha512-Ga1jfYwRn7+cP9v8auvEXN1rX3sWqlayd4HP7OKk4mZWylEmu3KzXDUGrQUN6Ol7qo1gPvB2e5gX6udnyEPgdA==}
     dev: true
 
   /unist-util-stringify-position/2.0.3:
