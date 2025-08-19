@@ -44,7 +44,7 @@
     "eslint": "^8.26.0",
     "fs-extra": "^11.0.0",
     "gradient-string": "^2.0.2",
-    "husky": "^8.0.0",
+    "husky": "^9.0.0",
     "kolorist": "^1.6.0",
     "minimist": "^1.2.7",
     "mustache": "^4.2.0",
