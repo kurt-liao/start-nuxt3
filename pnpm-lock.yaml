@@ -7,7 +7,7 @@ specifiers:
   esbuild: ^0.15.12
   eslint: ^8.26.0
   fs-extra: ^11.0.0
-  gradient-string: ^2.0.2
+  gradient-string: ^3.0.0
   husky: ^8.0.0
   kolorist: ^1.6.0
   minimist: ^1.2.7
@@ -22,7 +22,7 @@ devDependencies:
   esbuild: 0.15.12
   eslint: 8.26.0
   fs-extra: 11.0.0
-  gradient-string: 2.0.2
+  gradient-string: 3.0.0
   husky: 8.0.1
   kolorist: 1.6.0
   minimist: 1.2.7
@@ -529,6 +529,11 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+    dev: true
+
+  /chalk/5.6.2:
+    resolution: {integrity: sha512-7NzBL0rN6fMUW+f7A6Io4h40qQlG+xGmtMxfbnH/K7TAtt8JQWVQK+6g0UXKMeVJoyV5EkkNsErQ8pVD3bLHbA==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
     dev: true
 
   /character-entities-legacy/1.1.4:
@@ -1485,11 +1490,11 @@ packages:
     resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
     dev: true
 
-  /gradient-string/2.0.2:
-    resolution: {integrity: sha512-rEDCuqUQ4tbD78TpzsMtt5OIf0cBCSDWSJtUDaF6JsAh+k0v9r++NzxNEG87oDZx9ZwGhD8DaezR2L/yrw0Jdw==}
-    engines: {node: '>=10'}
+  /gradient-string/3.0.0:
+    resolution: {integrity: sha512-frdKI4Qi8Ihp4C6wZNB565de/THpIaw3DjP5ku87M+N9rNSGmPTjfkq61SdRXB7eCaL8O1hkKDvf6CDMtOzIAg==}
+    engines: {node: '>=14'}
     dependencies:
-      chalk: 4.1.2
+      chalk: 5.6.2
       tinygradient: 1.1.5
     dev: true
 
