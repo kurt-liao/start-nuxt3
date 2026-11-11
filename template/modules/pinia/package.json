@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "@pinia/nuxt": "^0.4.3",
+    "@pinia/nuxt": "^0.11.0",
     "pinia": "^2.0.23"
   }
 }
